@@ -1,3 +1,4 @@
+using System;
 namespace ShootingDice
 {
     // TODO: Complete this class
@@ -6,5 +7,14 @@ namespace ShootingDice
     public class SmackTalkingPlayer
     {
         public string Taunt { get; }
+
+        SmackTalkingPlayer(string taunt)
+        {
+            Taunt = Taunt;
+        }
+        public void Shout()
+        {
+            Console.WriteLine(Taunt);
+        }
     }
 }
